@@ -7,14 +7,19 @@ Dark green: #28b485
 
 */
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
+  /* allows us to move box-sizing to body and make it inherited by all children */
+  box-sizing: inherit;
 }
 
 html {
   /* set root font size */
-  font-size: 10px;
+  /* assuming 16px default we divide 10/16 to get a flexible % */
+  font-size: 62.5%;
 }
 
 body {
@@ -24,6 +29,8 @@ body {
 	line-height: 1.7;
   color: #777;
   padding: 3rem;
+  /* set box sizing setting for children to inherit */
+  box-sizing: border-box;
 }
 
 .header {
