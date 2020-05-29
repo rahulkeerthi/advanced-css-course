@@ -1,0 +1,32 @@
+.form {
+
+  &__group {
+    
+  }
+  
+  &__input {
+    font-family: inherit;
+    color: inherit;
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    background-color: rgba($color-light, .5);
+    border: white;
+    display: block;
+    
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba($color-black, .1);
+      border-bottom: 3px solid $color-medium-green;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $color-dark;
+    }
+    &__label {
+      font-size: .5rem;
+    }
+  }
+  
+  
+}

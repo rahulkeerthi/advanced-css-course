@@ -31,3 +31,28 @@
   position: relative;
   // background-color: $color-grey-light-1;
 }
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, $color-light-green, $color-dark-green);
+}
+
+.book {
+  background-image: linear-gradient(105deg, 
+                      rgba($color-light, .9) 0%, 
+                      rgba($color-light, .9) 50%, 
+                      transparent 50%), 
+                    url(../img/nat-10.jpg);
+  background-size: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, .25);
+  // background-size: cover;
+
+  height: 50rem;
+
+  &__form {
+    width: 50%;
+    padding: 6rem;
+    // float: left;
+  }
+}
