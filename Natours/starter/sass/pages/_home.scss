@@ -4,3 +4,18 @@
   margin-top: -25vh;
 }
 
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right, rgba($color-light-green, 0.8), rgba($color-dark-green, 0.8)), url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  margin-top: -12rem;
+  // clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+
+  transform: skewY(-7deg);
+
+  & > * {
+    transform: skewY(7deg);
+  }
+}
