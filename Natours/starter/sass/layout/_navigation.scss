@@ -17,6 +17,13 @@
     z-index: 1000;
     box-shadow: 0 1rem 3rem rgba($color-black, .1);
     cursor: pointer;
+
+    @include respond(tab-port) {
+      top: 2.5rem;
+      right: 4rem;
+    }
+  
+    
   }
 
 
@@ -31,6 +38,12 @@
     z-index: 100;
     transition: transform .8s cubic-bezier(0.215, 0.610, 0.355, 1);
     // transform: scale(80);
+
+    @include respond(tab-port) {
+      top: 3rem;
+      right: 4.5rem;
+    }
+
   }
 
 
