@@ -7,6 +7,9 @@
   box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
   transition: all .3s;
 
+  @include respond(tab-port) {
+  }
+
   &__icon {
     font-size: 6rem;
     margin-bottom: .5rem;
